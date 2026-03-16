@@ -1,0 +1,23 @@
+<!-- templates/score.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    textarea { width: 100%; height: 120px; }
+    .container { max-width: 760px; margin: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="scoreh1">You entered a {{ pred }}!</h1>
+    <p id="scorep"><strong>Score:</strong> {{ prob }}</p>
+    <label for="result">Input text</label>
+    <textarea id="result" readonly>{{ text }}</textarea>
+    <p><a href="/">Go back</a></p>
+  </div>
+</body>
+</html>
